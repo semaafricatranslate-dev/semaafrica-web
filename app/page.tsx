@@ -1,6 +1,17 @@
-import React from 'react'
-import Navbar from '../components/Navbar'
-import InterpreterCard from '../components/InterpreterCard'
+import React from 'react';
+import { Navbar } from '../components/Navbar';
+import { InterpreterCard } from '../components/InterpreterCard';
+
+// Dummy interpreter data to satisfy required component props during initial build
+const sampleInterpreter = {
+  id: '1',
+  name: 'Sample Interpreter',
+  languages: ['English', 'Swahili', 'French'],
+  location: 'Nairobi, Kenya',
+  bio: 'Professional interpreter bridging communication across Africa.',
+  rating: 5.0,
+  isAvailable: true,
+};
 
 export default function Home() {
   return (
@@ -17,9 +28,9 @@ export default function Home() {
         </header>
 
         <section style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: '1.5rem' }}>
-          <InterpreterCard />
+          <InterpreterCard interpreter={sampleInterpreter} />
         </section>
       </div>
     </main>
-  )
+  );
 }
