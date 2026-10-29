@@ -1,6 +1,6 @@
 import React from 'react'
-import Navbar from '@/components/Navbar'
-import InterpreterCard from '@/components/InterpreterCard'
+import Navbar from '../components/Navbar'
+import InterpreterCard from '../components/InterpreterCard'
 
 export default function Home() {
   return (
@@ -16,7 +16,6 @@ export default function Home() {
           </p>
         </header>
 
-        {/* Example grid where your InterpreterCard components will live */}
         <section style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: '1.5rem' }}>
           <InterpreterCard />
         </section>
