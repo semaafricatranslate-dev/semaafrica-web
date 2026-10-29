@@ -13,9 +13,7 @@ const sampleInterpreter = {
 };
 
 export default function Home() {
-  const handleOpenInquiry = () => {
-    // Placeholder handler for inquiry modal/action
-  };
+  const handleOpenInquiry = () => {};
 
   return (
     <main style={{ minHeight: '100vh', backgroundColor: '#f9fafb' }}>
