@@ -1,6 +1,6 @@
 import React from 'react';
-import { Navbar } from '../components/Navbar';
-import { InterpreterCard } from '../components/InterpreterCard';
+import Navbar from '../components/Navbar';
+import InterpreterCard from '../components/InterpreterCard';
 
 const sampleInterpreter = {
   id: '1',
