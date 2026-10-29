@@ -2,7 +2,6 @@ import React from 'react';
 import { Navbar } from '../components/Navbar';
 import { InterpreterCard } from '../components/InterpreterCard';
 
-// Dummy interpreter data to satisfy required component props during initial build
 const sampleInterpreter = {
   id: '1',
   name: 'Sample Interpreter',
@@ -14,9 +13,13 @@ const sampleInterpreter = {
 };
 
 export default function Home() {
+  const handleOpenInquiry = () => {
+    // Placeholder handler for inquiry modal/action
+  };
+
   return (
     <main style={{ minHeight: '100vh', backgroundColor: '#f9fafb' }}>
-      <Navbar />
+      <Navbar onOpenInquiry={handleOpenInquiry} />
       <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '2rem' }}>
         <header style={{ marginBottom: '2rem', textAlign: 'center' }}>
           <h1 style={{ fontSize: '2.5rem', fontWeight: 'bold', color: '#1f2937' }}>
