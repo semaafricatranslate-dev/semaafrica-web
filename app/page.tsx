@@ -2,24 +2,20 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import InterpreterCard from '../components/InterpreterCard';
-import type { InterpreterProfile } from '../types/interpreter';
 
-const sampleInterpreter: InterpreterProfile = {
+const sampleInterpreter = {
   id: '1',
-  full_name: 'Sample Interpreter',
-  native_language: 'English',
-  secondary_languages: ['Swahili', 'French'],
+  name: 'Sample Interpreter',
+  languages: ['English', 'Swahili', 'French'],
   location: 'Nairobi, Kenya',
   bio: 'Professional interpreter bridging communication across Africa.',
   rating: 5.0,
-  is_available: true,
-  hourly_rate_usd: 25,
-  // Add any other required fields from InterpreterProfile here.
+  isAvailable: true,
 };
 
 export default function Home() {
   const handleOpenInquiry = () => {
-    // TODO: Open the inquiry form or modal.
+    // TODO: Connect this to your inquiry form.
   };
 
   return (
